@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Asian Food Composition Database">
+    <meta name="keywords" content="nutrition, food composition, afaci">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" media="screen and (max-width:768px)" href="css/mobile.css">    
+    <script src="https://kit.fontawesome.com/69cc31a33f.js" crossorigin="anonymous"></script>    
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <title>Mongolian Food Composition Database</title> 
+</head>
+<body>
+    <!-- Main menu -->
+    <nav id="main-nav">
+        <div class="container">
+            <div class="logotxt">
+                <img src="img/globered.png" alt="mgl" class="logo">
+                <h1><span class="txt-color">Mongolian </span>Food Composition Database</h1>
+            </div>
+            <ul>
+                <li><a href="index.html">Overview</a></li>
+                <li><a class="current" href="mfcd.html">Food Composition</a></li>                               
+            </ul>
+        </div>
+    </nav>
+    <!-- Section - Food composition search -->
+    <section id="food-composition" class="py-2">
+        <div class="container">
+            <h2>Food Composition Database</h2>
+            <div class="composition-container">
+                <div class="search-container">
+                    <aside id="txtSearch" class="card">
+                        <h3>Food name</h3>
+                        <form>
+                            <input type="text" name="name" id="txt" placeholder="Enter food name" class="txt-block">
+                            <input type="button" id="btnSearch" value="Search" class="btn btn-block">                            
+                        </form>
+                    </aside>
+                    <aside id="listSearch" class="card sc">
+                        <h3>Food groups</h3>
+                        <ul id="ulFoodGroup" class="list">
+                            <li><i class="fas fa-chevron-right"></i> Cereals and Cereal products
+                                <ul class="sublist">
+                                    <li><input type="checkbox" value="wheat, whole, raw"> Wheat, whole, raw</li>
+                                    <li><input type="checkbox" value="barley, whole, raw"> Barley, whole, raw</li>
+                                    <li><input type="checkbox" value="barley, whole, raw">  Barley, whole, raw</li>
+                                    <li><input type="checkbox" value="rye, whole grain, raw"> Rye, whole grain, raw</li>
+                                    <li><input type="checkbox" value="oat, raw, polished"> Oat, raw, polished</li>
+                                    <li><input type="checkbox" value="wheat, flour, strong white"> Wheat, flour, strong white</li>
+                                    <li><input type="checkbox" value="wheat, flour, white"> Wheat, flour, white</li>
+                                    <li><input type="checkbox" value="wheat, flour, brown"> Wheat, flour, brown</li>
+                                    <li><input type="checkbox" value="wheat, flour, whole"> Wheat, flour, whole </li>
+                                    <li><input type="checkbox" value="barley, flour, pearled, whole"> Barley, flour, pearled, whole</li>
+                                    <li><input type="checkbox" value="barley, flour, whole"> Barley, flour, whole</li>
+                                    <li><input type="checkbox" value="rye, flour"> Rye, flour</li>
+                                    <li><input type="checkbox" value="oat, flour"> Oat, flour</li>
+                                    <li><input type="checkbox" value="wheat, flour, bread"> Wheat, flour, bread</li>
+                                    <li><input type="checkbox" value="rye, flour, bread"> Rye, flour, bread</li>
+                                    <li><input type="checkbox" value="bread, flour, multi-seeds"> Bread, flour, multi-seeds </li>
+                                    <li><input type="checkbox" value="noodles, wheat, flour"> Noodles, wheat, flour</li>
+                                    <li><input type="checkbox" value="noodles, wheat, flour, fortified"> Noodles, wheat, flour, fortified </li>
+                                </ul>                            
+                            </li>
+                            <li><i class="fas fa-chevron-right"></i> Pulses (Legume)
+                                <ul class="sublist">
+                                    <li><input type="checkbox" value="soybean, dried, raw"> Soybean, dried, raw</li>
+                                    <li><input type="checkbox" value="peas, dried, raw"> Peas, dried, raw</li>
+                                </ul>                            
+                            </li>
+                            <li><i class="fas fa-chevron-right"></i> Vegetables and vegetable products
+                                <ul class="sublist">                                    
+                                    <li><input type="checkbox" value="cabbage, green, raw"> Cabbage, green, raw</li>
+                                    <li><input type="checkbox" value="cabbage, purple, raw"> Cabbage, purple, raw</li>
+                                    <li><input type="checkbox" value="broccoli, raw"> Broccoli, raw</li>
+                                    <li><input type="checkbox" value="celery, raw"> Celery, raw</li>
+                                    <li><input type="checkbox" value="spinach, raw"> Spinach, raw</li>
+                                    <li><input type="checkbox" value="pepper bell, red, raw">  Pepper bell, red, raw</li>
+                                    <li><input type="checkbox" value="pepper bell, green, raw">  Pepper bell, green, raw</li>
+                                    <li><input type="checkbox" value="pepper bell, yellow, raw"> Pepper bell, yellow, raw</li>
+                                    <li><input type="checkbox" value="cucumbers, raw"> Cucumbers, raw</li>
+                                    <li><input type="checkbox" value="eggplant, raw"> Eggplant, raw</li>
+                                    <li><input type="checkbox" value="tomatoes, raw"> Tomatoes, raw</li>
+                                    <li><input type="checkbox" value="pumpkin, raw"> Pumpkin, raw</li>
+                                    <li><input type="checkbox" value="carrots, raw"> Carrots, raw</li>
+                                    <li><input type="checkbox" value="beetroot, yellow, raw"> Beetroot, yellow, raw</li>
+                                    <li><input type="checkbox" value="beetroot, red, raw"> Beetroot, red, raw</li>
+                                    <li><input type="checkbox" value="garlic, raw"> Garlic, raw</li>
+                                    <li><input type="checkbox" value="onion, raw"> Onion, raw</li>
+                                    <li><input type="checkbox" value="onion spring, raw">  Onion spring, raw</li>
+                                    <li><input type="checkbox" value="lettuce, raw"> Lettuce, raw</li>
+                                    <li><input type="checkbox" value="parsley, raw"> Parsley, raw</li>
+                                    <li><input type="checkbox" value="cauliflower, raw"> Cauliflower, raw</li>
+                                    <li><input type="checkbox" value="tomato cherry, raw"> Tomato cherry, raw</li>
+                                    <li><input type="checkbox" value="basil, raw"> Basil, raw</li>
+                                    <li><input type="checkbox" value="kale, raw"> Kale, raw</li>
+                                </ul>                            
+                            </li>
+                            <li><i class="fas fa-chevron-right"></i> Starchy Roots and Starch products
+                                <ul class="sublist">
+                                    <li><input type="checkbox" value="potato, raw"> Potato, raw</li>
+                                    <li><input type="checkbox" value="vermicelli"> Vermicelli</li>
+                                </ul>                            
+                            </li>
+                            <li><i class="fas fa-chevron-right"></i> Nuts and Seeds
+                                <ul class="sublist">
+                                    <li><input type="checkbox" value="cedar pine nut kernels"> Cedar (pine) nut kernels</li>
+                                    <li><input type="checkbox" value="flax seeds, raw"> Flax seeds, raw</li>
+                                    <li><input type="checkbox" value="sunflower seeds, raw"> Sunflower seeds, raw</li>
+                                    <li><input type="checkbox" value="cedar pine nut, raw"> Cedar (pine) nut, raw</li>
+                                    <li><input type="checkbox" value="cedar pine nuts oil"> Cedar (pine) nuts oil</li>
+                                    <li><input type="checkbox" value="flax flour"> Flax flour</li>
+                                </ul>                            
+                            </li>
+                            <li><i class="fas fa-chevron-right"></i> Seasonings
+                                <ul class="sublist">
+                                    <li><input type="checkbox" value="cumin, powder, raw"> Cumin, powder, raw</li>
+                                    <li><input type="checkbox" value="jalapeno, raw"> Jalapeno, raw</li>                                
+                                </ul>                            
+                            </li>
+                            <li><i class="fas fa-chevron-right"></i> Fruits and fruits products
+                                <ul class="sublist">                                    
+                                    <li><input type="checkbox" value="seabuckthorn, fruit"> Seabuckthorn, fruit</li>
+                                    <li><input type="checkbox" value="apple, small"> Apple, small</li>
+                                    <li><input type="checkbox" value="peruvian groundcherry"> Peruvian groundcherry</li>
+                                    <li><input type="checkbox" value="siberian crabapple fruit, wild"> Siberian crabapple fruit, wild</li>
+                                    <li><input type="checkbox" value="watermelon"> Watermelon</li>
+                                    <li><input type="checkbox" value="musk melon"> Musk melon</li>
+                                    <li><input type="checkbox" value="strawberry, farm"> Strawberry, farm</li>
+                                    <li><input type="checkbox" value="currants, black, wild"> Currants, black, wild</li>
+                                    <li><input type="checkbox" value="strawberry, wild"> Strawberry, wild </li>
+                                    <li><input type="checkbox" value="cranberry, wild"> Cranberry, wild</li>
+                                    <li><input type="checkbox" value="blueberry, wild"> Blueberry, wild</li>
+                                    <li><input type="checkbox" value="вird cherry, wild"> Вird cherry, wild</li>
+                                    <li><input type="checkbox" value="black currant, wild"> Black currant, wild</li>
+                                    <li><input type="checkbox" value="seabuckthorn, syrup"> Seabuckthorn, syrup</li>
+                                    <li><input type="checkbox" value="seabuckthorn, seed oil"> Seabuckthorn, seed oil</li>
+                                    <li><input type="checkbox" value="seabuckthorn, oil"> Seabuckthorn, oil</li>
+                                </ul>                            
+                            </li>
+                            <li><i class="fas fa-chevron-right"></i> Fish  and fish products
+                                <ul class="sublist">
+                                    <li><input type="checkbox" value="humpback whitefish, frozen, raw"> Humpback whitefish, frozen, raw</li>
+                                    <li><input type="checkbox" value="fish, canned, boiled"> Fish, canned, boiled</li>                                    
+                                </ul> 
+                            </li>
+                            <li><i class="fas fa-chevron-right"></i> Meat and meat products
+                                <ul class="sublist">
+                                    <li><input type="checkbox" value="beef, meat, boneless, raw, farm"> Beef, meat, boneless, raw, farm</li>
+                                    <li><input type="checkbox" value="sheep, meat, boneless, raw, from khangai"> Sheep, meat, boneless, raw, from Khangai</li>
+                                    <li><input type="checkbox" value="hourse, meat, boneless, raw"> Hourse, meat, boneless, raw</li>
+                                    <li><input type="checkbox" value="goat, meat, boneless, raw"> Goat, meat, boneless, raw</li>
+                                    <li><input type="checkbox" value="сamel, meat, boneless, raw"> Сamel, meat, boneless, raw</li>
+                                    <li><input type="checkbox" value="yak, meat, boneless, raw"> Yak, meat, boneless, raw</li>
+                                    <li><input type="checkbox" value="yak, dried meat, borts"> Yak, dried meat, borts</li>
+                                    <li><input type="checkbox" value="beef, meat, boneless, raw, from khangai"> Beef, meat, boneless, raw, from Khangai</li>
+                                    <li><input type="checkbox" value="sheep, meat, boneless, raw, from gobi"> Sheep, meat, boneless, raw, from Gobi</li>
+                                    <li><input type="checkbox" value="reindeer, meat, boneless, raw, from taiga"> Reindeer, meat, boneless, raw, from Taiga</li>                                    
+                                </ul> 
+                            </li>
+                            <li><i class="fas fa-chevron-right"></i> Dairy products
+                                <ul class="sublist">
+                                    <li><input type="checkbox" value="milk, cow, raw"> Milk, cow, raw</li>
+                                    <li><input type="checkbox" value="milk, goat, raw"> Milk, goat, raw</li>
+                                    <li><input type="checkbox" value="milk, camel, raw"> Milk, camel, raw</li>
+                                    <li><input type="checkbox" value="milk, mare, raw, from khangai"> Milk, mare, raw, from Khangai</li>
+                                    <li><input type="checkbox" value="milk, yak, raw"> Milk, yak, raw</li>
+                                    <li><input type="checkbox" value="milk, cow, uht"> Milk, cow, UHT</li>
+                                    <li><input type="checkbox" value="yogurt, milk, cow, fresh"> Yogurt, milk, cow, fresh </li>
+                                    <li><input type="checkbox" value="curd, milk, cow, fresh"> Curd, milk, cow, fresh </li>
+                                    <li><input type="checkbox" value="curd, milk, cow, dried"> Curd, milk, cow, dried  </li>
+                                    <li><input type="checkbox" value="cheese, milk yak, fresh"> Cheese, milk yak, fresh</li>
+                                    <li><input type="checkbox" value="eezgii, cheese, boiled"> Eezgii, cheese, boiled </li>
+                                    <li><input type="checkbox" value="butter, of 88% fat"> Butter, of 88% fat</li>
+                                    <li><input type="checkbox" value="ghee, milk, yak"> Ghee, milk, yak</li>
+                                    <li><input type="checkbox" value="kumis, milk, mare, from khangai"> Kumis, milk, mare, from Khangai</li>
+                                    <li><input type="checkbox" value="milk, camel, fermented"> Milk, camel, fermented</li>
+                                    <li><input type="checkbox" value="milk, mare, raw, from gobi"> Milk, mare, raw, from Gobi</li>
+                                    <li><input type="checkbox" value="curd, milk, yak, sweet, dried"> Curd, milk, yak, sweet, dried</li>
+                                    <li><input type="checkbox" value="curd, milk, camel, dried"> Curd, milk, camel, dried </li>
+                                    <li><input type="checkbox" value="curd, milk, reindeer, dreid"> Curd, milk, reindeer, dreid </li>
+                                    <li><input type="checkbox" value="kumis, milk, mare, from gobi"> Kumis, milk, mare, from Gobi</li>
+                                    <li><input type="checkbox" value="cream, milk, cow, raw"> Cream, milk, cow, raw</li>
+                                    <li><input type="checkbox" value="milk, reindeer, raw"> Milk, reindeer, raw</li>                                    
+                                </ul> 
+                            </li>
+                            <li><i class="fas fa-chevron-right"></i> Eggs
+                                <ul class="sublist">
+                                    <li><input type="checkbox" value="egg, chicken, whole, raw"> Egg, chicken, whole, raw</li>
+                                </ul> 
+                            </li>
+                            <li><i class="fas fa-chevron-right"></i> Prepared/Processed foods
+                                <ul class="sublist">
+                                    <li><input type="checkbox" value="biscuit, kheviin boov, fried"> Biscuit, kheviin boov, fried</li>
+                                    <li><input type="checkbox" value="cream, clotted, milk, yak, boiled"> Cream, clotted, milk, yak, boiled</li>                                    
+                                </ul> 
+                            </li>
+                            <li><i class="fas fa-chevron-right"></i> Mushrooms
+                                <ul class="sublist">
+                                    <li><input type="checkbox" value="mushroom, button, wild, raw"> Mushroom, button, wild, raw</li>
+                                </ul> 
+                            </li>
+                        </ul>
+                    </aside>
+                </div>
+                <div id="divResult" class="data-container">
+                    <article class="card">
+                        <img src="img/nomnuur1.png" alt="">
+                        <div>                        
+                            <h3>Guidelines for The Mongolian Food Composition
+                            </h3>
+                            <p>In Mongolia, the first “Food composition table” was established and published in 1997. It contains information for the following eight groups of products. It includes: Meat and meat products; Milk and dairy products; Cereals and their products; Vegetables; Fruits and their products; Fat, oils; Sugar contents products; Alcoholic. 
+                            In the first FCT, a total of 12 nutrients of protein, fat, carbohydrates, fiber, ash, and vitamins A, C, E, Ca, K, Na, and Fe are covered in 288 products of the above eight groups. It was managed by the Ministry of Food, agriculture, and Light Industry.  The FCT is available in hard copy. It contains few types of foods and has not been updated for more than 20 years.</p> 
+                        </div>
+                    </article>
+                    <article class="card">
+                        <img src="img/nomnuur2.png" alt="">
+                        <div>                        
+                            <h3>Food Composition Table for Mongolia</h3>
+                            <p>This new edition of the Mongolia food composition table is based on a systematic data management process and international standards and guidelines for food composition. Food composition data from various Mongolian University of Life Science and research institutes of SAMO in Mongolia were collected and compiled. In addition …… were analyzed fiber, fatty acid, and amino acid composition. Food composition data from other sources (Korean FCT and scientific literature) were used to supplement missing values. The FCT contains 108 foods and 14 mandatory components. Most of the data are raw foods. Two cooked foods and recipes were calculated by using yield factors from Islam et al (2012) and Rahim et al (2013) and retention factors from Eurofir (Vasquez-Caicedo et al., 2008). The FST is divided in a main table (containing values on proximates, minerals, and vitamins) and several annex tables for amino acids, and fatty acids. Moreover, this edition contains protein values based on food-specific nitrogen-to-protein conversion factors instead of a general factor of 6.25, and emphasis was given to include values for total dietary fiber.</p> 
+                        </div>
+                    </article>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <!-- Footer -->
+    <footer id="main-footer" class="py-2">
+        <div class="container footer-container">
+             <div class="team-members">
+                <h3>Project team members</h3>
+                <ul class="list">
+                    <li><a href="https://afaci.org" target="_blank">Asian Food and Agriculture Cooperation Initiative</a></li>
+                    <li><a href="https://muls.edu.mn" target="_blank">Mongolian University of Life Sciences</a></li>
+                    <li><a href="https://www.rda.go.kr/foreign/ten2/" target="_blank">Rural Development Administration</a></li>
+                    <li><a href="https://www.mofa.gov.mn" target="_blank">Ministry of Food, Agriculture, and Light Industry</a></li>
+                </ul>
+            </div>
+            <div class="core-members">
+                <h3>Project core members</h3>
+                <ul class="list">
+                    <li>Project investigators: Erkigul.B, Enkhjargal.B</li>
+                    <li>Researchers: Buyanchimeg.B, Ulanbayar.C</li>
+                    <li>Tserenkhand.Z, Khandsuren.D, Otgondemberel.D </li>
+                </ul>
+            </div>
+            <div class="contact">
+                <h3>Contact information</h3>
+                <ul class="list">
+                    <li>Mongolian University of Life Sciences</li>
+                    <li>Zaisan, Khan-Uul district, Ulaanbaatar 17024, Mongolia</li>
+                    <li>Tel: (+976)-751-077-77 | Fax. (+976)-113-413-77</li>
+                    <li>E-mail: agri_science@muls.edu.mn</li>
+                </ul>
+            </div>
+            <div><p>Copyright &copy 2024. All Rights Reserved</p></div>
+        </div>
+    </footer>
+    <script src="js/app.js"></script>
+    <script src="js/jquery-3.6.0.min.js"></script>
+</body>
+</html>

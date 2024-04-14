@@ -1,0 +1,44 @@
+/* Nav */
+#main-nav .container {
+flex-direction: column;
+}
+#main-nav .logotxt {
+    margin-bottom: 0.5rem;
+}
+#main-nav ul li a {
+    padding: 0.5rem;    
+}
+/* Showcase */
+#showcase .showcase-container {
+    grid-template-columns: 1fr;
+}
+/* Section - Food local */
+#food-local .local-container {
+    grid-template-columns: repeat(2, 1fr);
+}
+/* Section - Food composition */
+#food-composition .composition-container {    
+    grid-template-columns: repeat(2, 1fr);    
+}
+#food-composition .data-container {    
+    grid-template-columns: 1fr;    
+}
+/* Footer */
+#main-footer .core-members {display: none;}
+#main-footer .footer-container {    
+    grid-template-columns: repeat(2, 1fr);
+}
+@media(max-width: 600px) {
+    #food-local .local-container {
+        grid-template-columns: 1fr;
+    }
+    #main-footer .footer-container {        
+        grid-template-columns: 1fr;   
+    }
+    #main-footer .footer-container > *:last-child {       
+        grid-column: 1;
+    }
+    #food-composition .composition-container {    
+        grid-template-columns: 1fr;    
+    }
+}

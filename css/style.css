@@ -1,0 +1,234 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+:root {
+    --c00:#fff;
+    --c11:#0071bc;
+    --c12:#205493;
+    --c13:#003050;
+    --c21:#f3f3f3;
+    --c22:#f1f1f1;
+    --c23:#333;
+    --c30:#8f0000;
+    --c40:#f7ce28;
+    --c50:#005941;
+    --mxw: 1100px;
+}
+/* Reset */
+* {
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.5;
+    background: var(--c21);
+}
+
+a {color: var(--c11); text-decoration: none;}
+ul {list-style: none;}
+img {width: 100%;}
+
+/* Utility */
+.container {
+    max-width: var(--mxw);
+    margin: auto;
+    padding: 0 2rem;
+    overflow: hidden;
+}
+.txt-color {color: var(--c30);}
+.btn {
+    display: inline-block;
+    border: none;
+    background: var(--c11);
+    color: #fff;
+    padding: 0.5rem 1.5rem;
+}
+.btn-block {
+    display: block;
+    width: 100%;
+    text-align: center;
+      
+}
+.btn:hover {background: var(--c12);}
+.txt-block {
+    width: 100%;
+    padding: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.card {
+    background: #fff;
+    padding: 1rem;
+}
+/* .card img {
+    height: 50%;
+} */
+.py-1 {padding: 1.5rem 0;}
+.py-2 {padding: 2rem 0;}
+.py-3 {padding: 3rem 0;}
+.p-1 {padding: 1.5rem;}
+.p-2 {padding: 2rem;}
+.p-3 {padding: 3rem;}
+.list li {
+    padding: 0.3rem 0;
+    border-bottom: var(--c12) dotted 1px;
+    width: 100%;
+}
+.sublist {
+    font-size: 0.8rem;
+}
+.sublist li:last-child {
+    border-bottom: none;
+}
+
+#listSearch ul li {
+    display: inline-block;
+    position: relative;    
+}
+
+#listSearch ul li ul {
+    display: none;
+    left:1rem;
+}
+#listSearch ul li:hover ul {
+    display: block;
+    position: relative;
+    
+}
+
+#listSearch ul li ul li:hover {
+    cursor: pointer;
+    color: var(--c11);
+
+}
+
+.listHeading {
+    /* color: var(--c11); */
+    text-align: center;
+}
+.listSubHeading {
+    background: var(--c21);
+    margin-top: 1rem;
+    padding: 0.5rem;
+    text-align: center;
+}
+.sc {
+    overflow-y: scroll;
+    scroll-behavior: smooth;    
+}
+/* Nav */
+#main-nav {
+    background: #fff;
+    position: sticky;
+    top: 0;
+    z-index: 2;
+}
+#main-nav .container {
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+    align-items: center;
+} 
+#main-nav .logotxt {
+    display: flex;     
+}
+#main-nav ul {
+    justify-self: end;
+    display: flex;
+}
+#main-nav .logo {    
+    width: 50px;
+    padding-right: 0.5rem;    
+}
+#main-nav h1 {color: var(--c11);}
+#main-nav ul li a {
+    padding: 0.75rem;    
+}
+#main-nav ul li a.current {background: var(--c11); color: #fff;}
+#main-nav ul li a.current:hover {background: var(--c12); color: #fff;}
+#main-nav ul li a:hover {color: var(--c12);}
+
+/* Showcase */
+#showcase {
+    color: #fff;
+    background: #0071bc;
+    padding: 2rem;
+    position: relative;
+}
+#showcase::before {
+    content: '';
+    background: url('../img/mongolianmappoint.jpg') no-repeat center center/cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0.5;
+}
+#showcase .showcase-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: center;
+    align-items: center;
+    height: 50vh;
+}
+#showcase .showcase-content {z-index: 1;}
+#showcase .showcase-content p {margin-bottom: 1.5rem;}
+
+/* Section - Food local */
+#food-local .local-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 1rem;
+}
+/* Section - Food composition */
+#food-composition .composition-container {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-gap: 1rem;
+    grid-template-rows: 1fr;    
+
+}
+#food-composition .search-container {
+    display: grid;    
+    grid-gap: 1rem;      
+    height: 100vh;
+}
+
+#food-composition .data-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 1rem;
+}
+
+
+
+#divLocal article ul li span,
+#divResult article ul li span {
+    float: right;
+}
+
+
+
+/* Footer */
+#main-footer {
+    background: var(--c11);
+    color: #fff;
+}
+#main-footer a {color: #fff;}
+#main-footer .footer-container {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-gap: 1.5rem; 
+    font-size: 0.75rem;     
+}
+#main-footer .footer-container > *:last-child {
+    background: var(--c12);
+    grid-column: 1 / span 3;
+    text-align: center;
+    padding: 0.5rem;      
+}
+#main-footer a:hover {    
+    color: var(--c40);
+}
