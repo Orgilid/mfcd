@@ -86,16 +86,20 @@ img {width: 100%;}
     display: inline-block;
     position: relative;    
 }
+/* #listSearch ul li:hover i {
+    
+} */
 
 #listSearch ul li ul {
     display: none;
     left:1rem;
 }
+
 #listSearch ul li:hover ul {
     display: block;
-    position: relative;
-    
+    position: relative;    
 }
+
 
 #listSearch ul li ul li:hover {
     cursor: pointer;
