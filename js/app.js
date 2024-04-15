@@ -1,4 +1,4 @@
-fetch("http://127.0.0.1:5500/data.html")
+fetch("https://orgilid.github.io/mfcd/data.html")
   .then(r => {   
     return r.text();
   })
